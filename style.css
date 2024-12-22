@@ -172,3 +172,44 @@ footer {
     margin-top: 20px;
     border-top: 5px solid #2e7d32;
 }
+
+/* Media query untuk layar dengan lebar maksimum 768px (tablet dan HP) */
+@media screen and (max-width: 768px) {
+    body {
+        background-size: cover; /* Pastikan latar belakang menyesuaikan layar */
+    }
+
+    nav {
+        flex-direction: column; /* Navigasi menjadi vertikal */
+    }
+
+    nav a {
+        text-align: center; /* Pusatkan teks */
+        padding: 10px 0; /* Tambahkan ruang antar elemen */
+    }
+
+    .hero {
+        height: auto; /* Sesuaikan tinggi hero */
+        padding: 20px; /* Tambahkan ruang di dalam hero */
+    }
+
+    .menu {
+        flex-direction: column; /* Susun menu secara vertikal */
+    }
+
+    .menu-item {
+        width: 90%; /* Buat menu lebih sempit agar muat di layar kecil */
+        margin: 15px auto; /* Pusatkan setiap menu item */
+    }
+
+    form {
+        width: 90%; /* Buat formulir lebih sempit */
+        margin: 20px auto; /* Pusatkan formulir */
+    }
+
+    iframe {
+        width: 100%; /* Peta menyesuaikan lebar layar */
+        height: auto;
+    }
+}
+
